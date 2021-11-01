@@ -1,7 +1,5 @@
 pipeline{
-    node{
-        label 'workstation'
-    }
+   agent any
     stages{
         stage("one"){
             echo "hello"
