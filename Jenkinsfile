@@ -6,5 +6,16 @@ pipeline{
               echo "hello"
             }
         }
+        stage("two"){
+        steps{
+            echo world
+        }
+        }
     }
+    post{
+        always{
+            echo "qwertyuiop"
+        }
+    }
+
 }
